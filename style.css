@@ -1,0 +1,42 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(96, 109, 134);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.displayProduct{
+    
+    margin-top: 30px;
+}
+header{
+    height: 100vh;
+    background-image: url(images/22.jpg);
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+  
+    
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.34) ;
+   
+}
+.text-input{
+    font-size: 20px;
+    font-weight: 600;
+     
+    color: rgb(96, 109, 134);
+}
+.text-input:focus{
+    color: rgb(120, 160, 212);
+}
+
+.proImage{
+    background-color: brown;
+    height: 14rem;
+}
+.proImage img{
+    height: 100%;
+    width: 100%;
+}

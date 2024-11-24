@@ -1,0 +1,52 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<header >
+    <div class="overlay">
+    <div class="container py-4 position-relative form-floating">
+        <input type="text" id="productName" class="form-control w-75 border-0 border-bottom pt-2 text-input">
+        <label class="position-absolute top-0   ">Product Name</label>
+
+    </div>
+    <div class="container py-4 position-relative form-floating">
+        <input id="productPrice" class="form-control w-75 border-0 border-bottom  pt-2 text-input">
+        <label class="position-absolute top-0 ">Product Price</label>
+
+    </div>
+    <div class="container form-floating py-4 position-relative">
+        <input type="text" id="productCategory" list="data" class="form-control  text-input w-75 border-0 border-bottom pt-2">
+        <label class="position-absolute top-0 ">Product Category</label>
+        <datalist id="data"  >
+            <option value="TV">
+            <option value="Mobile">
+            <option value="Screen">
+        </datalist>
+    </div>
+    <div class="container py-4 position-relative form-floating">
+        
+        <input type="file" id="productImage" class=" form-control  text-input w-75 border-0 border-bottom pt-2 form-file">
+        <label  class="position-absolute top-0 ">Product image</label>
+        <button id="addBtn" class="btn btn-info my-4" onclick="addProduct()">Add Product</button>
+        <button id="updateBtn" class="btn btn-outline-info my-4 d-none" onclick="upDate()">Update Product</button>
+    </div>
+</div>
+</header>
+    <section>
+        <div class="d-flex justify-content-center mt-5 ">
+        <input id="searchWord"  placeholder="search.............." class="form-control w-50 " oninput="search()">
+    </div>
+        <div class="container">
+            <div class="row displayProduct pt-5" id="rowData">
+               
+            </div>
+        </div>
+    </section>
+   
+   <script src="index.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    </body>
+</html>                                                                    
